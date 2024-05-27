@@ -3,18 +3,19 @@ import numpy as np
 import re
 
 # Load the dataset
-data = pd.read_excel(r'C:\Users\15018\Desktop\QuiverPBI\Datasets\congress-trading-all (1).xlsx')
+data = pd.read_excel(r'FILEPATHHERE\Datasets\congress-trading-all (1).xlsx')
 
 # Data cleaning
 # Convert 'Traded' and 'Filed' columns to datetime
 data['Traded'] = pd.to_datetime(data['Traded'], errors='coerce')
 data['Filed'] = pd.to_datetime(data['Filed'], errors='coerce')
 
-# Function to convert range strings to their midpoint
+# Because lots of trade sizes appear as a range instead of integers, I am 
+# adding a column that displays the midpoint of the ranges to help with analysis
 def range_to_midpoint(range_str):
     if pd.isna(range_str):
         return np.nan
-    # Remove non-numeric characters except dot and hyphen
+    # Removing non-numeric characters except dot and hyphen
     range_str = re.sub(r'[^\d.-]', '', range_str)
     parts = range_str.split('-')
     if len(parts) == 2:
@@ -35,7 +36,7 @@ data['Trade_Size_Midpoint'] = data['Trade_Size_USD'].apply(lambda x: range_to_mi
 data = data.fillna('NA')
 
 # Save cleaned data to a CSV file
-cleaned_file_path = r'C:\Users\15018\Desktop\QuiverPBI\cleaned_congress_trading2.csv'
+cleaned_file_path = r'FOLDERPATHHERE\cleaned_congress_trading2.csv'
 data.to_csv(cleaned_file_path, index=False)
 
 # Display the cleaned data for verification
