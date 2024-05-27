@@ -3,7 +3,7 @@ import numpy as np
 import re
 
 # Load the dataset from QuiverQuantitative
-file_path = r'C:\Users\15018\Desktop\QuiverPBI\congress-trading-all (1).xlsx'
+file_path = r'C:FILEPATHHERE\QuiverPBI\congress-trading-all (1).xlsx'
 data = pd.read_excel(file_path)
 
 # Data cleaning
@@ -34,5 +34,5 @@ data['Trade_Size_USD'] = data['Trade_Size_USD'].apply(range_to_midpoint)
 data.fillna({'Subholding': 'Unknown', 'Description': 'No Description', 'Comments': 'No Comments'}, inplace=True)
 
 # Save cleaned data to a CSV file
-cleaned_file_path = r'C:\Users\15018\Desktop\QuiverPBI\cleaned_congress_trading.csv'
+cleaned_file_path = r'C:FILEPATHHERE\QuiverPBI\cleaned_congress_trading.csv'
 data.to_csv(cleaned_file_path, index=False)
