@@ -21,6 +21,6 @@ In our original dataset pulled from Quiver Quantitative there are a number of mi
 
 # Dashboard:
 
-![1717357881889-a50656d5-a99f-4360-9618-c32e032225afTrades_1](https://github.com/CameronCMaples/CongressTradesPBI/assets/78427260/5558627c-0fbb-4505-9e39-7d69c0c42575)
+![Screenshot 2024-06-02 155250](https://github.com/CameronCMaples/CongressTradesPBI/assets/78427260/bf139c28-e66d-4268-8ef7-63ffedfe41cd)
 
 
