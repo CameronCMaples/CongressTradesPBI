@@ -5,7 +5,7 @@ To find updated data and export yourself visit Quiverquant.com
 
 Dashboard:
 
-[Congressional Stock Trades.pdf](https://github.com/user-attachments/files/15526668/Congressional.Stock.Trades.pdf)
+![1717357881889-a50656d5-a99f-4360-9618-c32e032225afTrades_1](https://github.com/CameronCMaples/CongressTradesPBI/assets/78427260/5558627c-0fbb-4505-9e39-7d69c0c42575)
 
 Key Findings:
 
