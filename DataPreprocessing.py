@@ -3,7 +3,7 @@ import numpy as np
 import re
 
 # Load the dataset
-data = pd.read_excel(r'C:\Users\15018\Desktop\QuiverPBI\Datasets\congress-trading-all (1).xlsx')
+data = pd.read_excel(r'FILEPATH\Datasets\congress-trading-all (1).xlsx')
 
 # Data cleaning
 # Convert 'Traded' and 'Filed' columns to datetime
@@ -41,6 +41,6 @@ data['last_modified'].fillna(method='ffill', inplace=True)
 
 
 # Save cleaned data to a CSV file
-cleaned_file_path = r'C:\Users\15018\Desktop\QuiverPBI\processed_congress_trading.csv'
+cleaned_file_path = r'FILEPATH\processed_congress_trading.csv'
 data.to_csv(cleaned_file_path, index=False)
 
